@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+:root {
+  --primary-font: "Montserrat", sans-serif;
+  --seconday-font: "Cormorant Garamond", serif;
+  --primary-color: #8ea698;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: var(--primary-font);
+}
+
+main {
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+main .left {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+
+main .left .wrapper {
+  width: 82%;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 100px;
+}
+
+main .left nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .left nav aside a {
+  font-size: 19px;
+  font-weight: 300;
+  font-family: var(--seconday-font);
+  color: black;
+  text-decoration: none;
+}
+
+main .left nav aside ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  gap: 20px;
+  list-style: none;
+}
+
+main .left nav aside ul li a {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: var(--primary-font);
+}
+
+main .right {
+  position: fixed;
+  left: 50%;
+  width: 50%;
+  height: 100vh;
+  background-color: var(--primary-color);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content;
+  place-items: center;
+}
+
+main .right .top {
+  height: 80px;
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+main .right .top button {
+  width: 157px;
+  height: 40px;
+  font-size: 15px;
+  color: white;
+  border: 0px;
+  background-color: black;
+}
+
+main .right .bottom {
+  display: grid;
+  place-items: center;
+}
+
+main .right .bottom img {
+  width: max-content;
+  height: max-content;
+  object-fit: contain;
+}
+
+main .left .wrapper .info {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 50px;
+  place-items: center;
+}
+
+main .left .wrapper .info .top h1 {
+  font-size: 85px;
+  font-weight: 500;
+  font-family: var(--seconday-font);
+  color: black;
+  margin: 0px;
+}
+
+main .left .wrapper .info .top h3 {
+  font-size: 28px;
+  font-weight: 400;
+  color: black;
+  margin: 0px;
+}
+
+main .left .wrapper .info .middle {
+  width: 50%;
+  display: grid;
+  place-items: left;
+  grid-template-columns: 1fr;
+  row-gap: 10px;
+}
+
+main .left .wrapper .info .middle p {
+  font-size: 15px;
+  color: black;
+  font-weight: 400;
+  margin: 0px;
+}
+
+main .left .wrapper .info .middle p span {
+  font-weight: 700;
+}
+
+main .left .wrapper .info .middle ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+main .left .wrapper .info .middle ul li a {
+  font-size: 15px;
+  font-weight: 400;
+  color: black;
+}
+
+main .left .wrapper .info .middle ul li span {
+  font-size: 13px;
+  font-weight: 900;
+}
+
+main .left .wrapper .info .bottom {
+  width: 50%;
+}
+
+main .left .wrapper .info .bottom a {
+  display: flex;
+  gap: 20px;
+  font-size: 15px;
+  font-weight: 400;
+  color: black;
+  text-decoration: none;
+}
+
+aside.left section.about {
+  margin-top: 300px;
+}
+aside.left section.about span {
+  font-size: 22px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  padding-left: 220px;
+  padding-right: 200px;
+  font-family: var(--seconday-font);
+  font-weight: 700;
+}
+
+aside.left section.about p {
+  font-size: 15px;
+  letter-spacing: 0.04em;
+  padding-left: 220px;
+  padding-right: 190px;
+  line-height: 2.2em;
+}
+aside.left section.skills {
+  margin-top: 300px;
+  padding-left: 180px;
+  padding-right: 190px;
+}
+aside.left section.skills span {
+  font-size: 22px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  padding-left: 30px;
+
+  font-weight: 700;
+  font-family: var(--seconday-font);
+}
+
+aside.left section.skills li a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  letter-spacing: 0.04em;
+  font-family: var(--primary-font);
+  line-height: 2.2em;
+}
+
+aside.left section.work {
+  margin-top: 300px;
+  margin-left: -100px;
+}
+
+aside.left section.work span {
+  font-size: 22px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  margin-left: 40px;
+  font-weight: 700;
+  font-family: var(--seconday-font);
+}
+
+aside.left section.work ul li {
+  list-style: none;
+}
+
+aside.left section.work ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  letter-spacing: 0.04em;
+  font-family: var(--primary-font);
+  line-height: 2.2em;
+}
+
+aside.left section.education {
+  margin-top: 300px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+aside.left section.education span {
+  font-size: 22px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  padding-left: 20px;
+  padding-right: 200px;
+  font-weight: 700;
+  font-family: var(--seconday-font);
+}
+
+aside.left section.education ul li {
+  list-style: none;
+  margin-left: -25px;
+}
+
+aside.left section.education ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  letter-spacing: 0.04em;
+  font-family: var(--primary-font);
+  line-height: 2.2em;
+}
+
+aside.left section.key {
+  margin-top: 300px;
+  padding-left: 180px;
+  padding-right: 200px;
+}
+aside.left section.key span {
+  font-size: 22px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  padding-left: 30px;
+
+  font-weight: 700;
+  font-family: var(--seconday-font);
+}
+
+aside.left section.key ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  letter-spacing: 0.04em;
+  font-family: var(--primary-font);
+  line-height: 2.2em;
+}
+
+aside.left section.contact {
+  margin-top: 300px;
+  margin-left: -200px;
+}
+aside.left section.contact span {
+  font-size: 22px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  padding-left: 40px;
+
+  font-weight: 700;
+  font-family: var(--seconday-font);
+}
+
+aside.left section.contact ul li {
+  list-style: none;
+}
+
+aside.left section.contact ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  letter-spacing: 0.04em;
+  font-family: var(--primary-font);
+  line-height: 2.2em;
+}
+
+.footer {
+  margin-top: 300px;
+  padding-left: 100px;
+  padding-right: 200px;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  letter-spacing: 0.04em;
+  font-family: var(--seconday-font);
+  line-height: 2.2em;
+}
